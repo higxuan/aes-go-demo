@@ -1,2 +1,105 @@
 # aes-go-demo
-AES 加密 golang 语音示例
+
+加密：
+go run main.go '{                                                                                                                                                        
+  "ua": "Mozilla/5.0 (Linux; Android 14; SM-S9180 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/117.0.0.0 Mobile Safari/537.36",
+  "app": {                    
+    "app_id": "1282",                                                           
+    "app_name": "com.ceshi.cn",
+    "package_name": "com.ceshi.cn"
+  },                   
+  "user": {                
+    "user_id": "20231105144701-e71e2e3b-e4f9-4241-81c4-4d634c25c1e6-26616633"
+  },                    
+  "bid": "B78B361A142CDC079414DAC07509AE5F",
+  "device": {        
+    "device_id": [           
+      {                  
+        "device_id": "85d1d060be96f0743f44ce3e6d5d861f0e3405d242c33d116825ea09f15051f4",
+        "device_id_type": 10,
+        "hash_type": 0        
+      }                                                                         
+    ],                       
+    "os_type": 2,             
+    "os_version": "14",  
+    "os_api_level": "34",  
+    "brand": "samsung", 
+    "model": "SM-S9180",
+    "manufacture": "samsung",
+    "device_type": 2,  
+    "language": "zh-Hans-CN",
+    "screen_width": 1080,
+    "screen_orientation": 1,  
+    "oaid ": "85d1d060be96f0743f44ce3e6d5d861f0e3405d242c33d116825ea09f15051f4",
+    "mem_total": 11565289472,  
+    "disk_total": 247704715264    
+  },                   
+  "network": {             
+    "ip": "10.40.71.37",                                                     
+    "network_type": 0,  
+    "is_abroad": 0,                         
+    "carrier_id": 0, 
+    "real_carrier_id": ""    
+  },                     
+  "adspaces": [                                                                         
+    {                        
+      "adspace_id": "6603768",
+      "base_price": 1500,                                                       
+      "adspace_type": 4,     
+      "impression_num": 1,    
+      "open_type": 0,    
+      "interaction_type": [
+        2,              
+        3,              
+        7,                   
+        9              
+      ],                     
+      "asset": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "adspace_position": 0,
+      "impression_time": 8,
+      "installed_pkgs": [
+        "com.test.01",
+        "com.test.07",
+        "os.360os.com",
+        "aaa.360os.com",
+        "com.test0002",
+        "com.test"
+      ]                                                                                                                                                                       
+    }
+  ]
+}' de63cbfa1ec7b1db 2c3528325d999e18 encrypt
+
+
+加密结果：
+
+2kJLvaTJENZmYmIyj5JECtKRDVzKihD9rjyR%2Ftd27iyXmqYZ14wMltjlGwxLupb9OOsvhgMsT%2BmLwcPQisuSkNc1qZtqWaDrBHlNLYUh%2Fa4y7K%2FPdxvkHO0qzgjpDny8OF0Xo0ULzmfQdO2NVa4xRcPeBjiqZOGlm6lyVcashguYrfNJtmhFVjdT8sGp1Q8x9aKnfGJttig%2BAgjA%2BfbgPXhi13CcVUPWlMK9oqmbcknFvg5dV%2Fwtf6xpwst9awiYY7Jm6pi7lwrrymHAnG7GVC6lB5pHOlsTVyvdx8xqno%2FXVFUEdYtxb5k4b5GGfB7JJfPj%2FL5zizgZ6KAjgDv1t%2FsWOeQ%2Fc2DNCwhdYbe%2FckRGp5Vnk0Bz20UUSuX6ABf9Kq5Vom9kPNssLVg1%2F5%2FQAm5FoFFP8HkdTWxKBSbYK8RELKUrz%2BMxh3R8dTOXVtokQViG9%2BDO8adGYUwfu7G%2BBUKQvm39VBKCOyAbX0k%2B4%2FHJutXlah%2FWT98nTzHmUXY4rpivWBNw%2BN9cvALY2Z%2FZfWqvlEyXIoQTLBdQPQEyFN6rclZv62S8KDhGIGRKdR700tEUKGvFsv7aArT%2F8RQWGr9ftLKVuMqfUwbX63pWrCLO11VBcPfpyXjpHt5Ix%2FoIvmi7W5dVuozcEctKyEq028tGAWVn4Wo9SEI%2FMkswQVjcxc5sG4b2THfRsxKadE6%2FbkSbSKYZOz7c8Eww7sxwxvNBmdA%2BvfrfG%2FqP14ztemQ4mAOBrrn%2FaHbqt1TpOJ2lVqfFQeMuWF9FM51PS8Iz2wjsaEA%2BoOxnmJeAVo9DRj9LPaRxhJts4Jqn7cfT5H1caVjcIl12iv9YaXCh75S4PS5QeUXrN8XtmvuciJTMKnOlDSGfsWWoNuo6L9V68PSZW4B414oFx7P9TEaXf5S1%2FIJYRCjsMqI3YXcfGOD7ozZU7T4V8tmYEIaV2vrzGtrVF9wRz1oCZ6LcC%2F5nePxc6h7Oz6Ef9XyHnff2wJqE4XnOIpaiFBPe6lDPaiZKcF91VTpwBPY8z%2FAoZEZGNstWZuxDOyIX5VJX5L9rElrywUY%2B8S6sSDaKKJRtGPl83g%2FcLhEe7du8ZeF2Vxt1%2Bv2ygrU0v3Xb6Ci8fck9Z7zRHCrbCCbYCjxen2O1e064ALPk4I6Dx5FAblUuZG0WEzSKcqdXgcp%2FAjtiRVzCBLaQOvPuwbIQMA%2FwvjQMoClaiZj0jj855UieqUoi6ioGQObGFcVqOVyFkaEpc8fs1Okw%2B0EDpuZvJ1wkKDruB%2FYjgGH8%2BQbI4uzpgTks01kwr6nkwc8niqSj36xy68N5c2aCc0QgeCmJczmn8LmWj70hoWvkWo%2BwB8n7Y2%2F6MJwFh8vY9rKvGjkd5VGhuK4CH%2FbiMMuSIxPMmL4O%2FpZwBPRV1RyH%2BVjce6sRElImoVds%2F3X7KG00yDg3ucCWSrNpzGjvthllhaJjLNdXI47j1KGIfxLApUlQ2uRQSgZAWIFz%2Fa8jWpdVsyeglqfz9yIyuCTC2JZRikIJ%2BrPaiEZeVw2ONg2Z39qEfN1lq9E%2BqfBYvhP0l1Fdaht%2FQ%2BXJw5b8rbGA6Ejw0V4EVUEaJRt7U0ImM2vMxb7CTpCEa45J9DaQE0pQ9fyNwPFucS159KoD3RRbXsJxK4B3YO%2B4vg5lS7GKS1Pzct6YyJsAP6Xhe3oYMHKZfTB1njmdnimWJ4lqVD12XfffMKs%2BXUT532Gbaz%2FC4jSjhlHZwu%2B0hiKeXQbTUGT%2FYDnuCMMexcmmGB8UizORWtqQ5XBXco%2FMdIZOHAW35oSBD2ZfQZPPyolP5cTvZ2%2FVD%2FbroqklmW2%2BKtJXvDxo3ciZTPmL2YdTaQRXwpnNqDzfm6Obc6N3zClsTBkf5wEC9koQWqqNQXW2Pa5Iers9Qdt0mwfydjMQjPfpyqZoHr%2BF0ntgiW8YHYrCvKb%2B8lwAVCJhBOnv5iwjAzUTHTf0OrBMlBojI3utyGffKg3RGEgxbL3psLMEsNgUTvUwvXB9I666gc%2BmigwoK2jt3kAVOi%2BIdvyggm22S1dnRV3mQtwjZvXB83NzIve71eZ4NEbCG6MAdyDH4%2FXaj9faTIcQ2xKtIIxPunv46VCSsj5%2B7Gp4UUFKJuXQ6v6l%2FE5KjsGSSy5B1dwhhUzF6dt3ogkJ3QBO4EHs88Io1AsvTbQypjz0qkGf9yOE%2FL1Vf0BpJmknW7bPFFQqKr%2FWBKI5v8iIX7O8MWotJZ%2Fo9IkAYmMlUBEShGMnACNgl%2BWRBbClrACqIoYj4jkAsazxN%2F%2Bs%2FMhmzd%2B%2FeQFTaZ3nq3aOj%2FIzI%2BE%2FUlrcf%2FkEHtkpB7f3PzUNUQ%3D%3D
+
+
+调用： 调用加 header : Content-Encrypt: true
+
+curl --location --request POST 'https://adx.qiku.com/s/bid?ver=1&appId=1282' \
+--header 'Content-Encrypt: true' \
+--header 'User-Agent: Apifox/1.0.0 (https://apifox.com)' \
+--header 'Content-Type: text/plain' \
+--header 'Accept: */*' \
+--header 'Host: adx.qiku.com' \
+--header 'Connection: keep-alive' \
+--data-raw '2kJLvaTJENZmYmIyj5JECtKRDVzKihD9rjyR%2Ftd27iyXmqYZ14wMltjlGwxLupb9OOsvhgMsT%2BmLwcPQisuSkNc1qZtqWaDrBHlNLYUh%2Fa4y7K%2FPdxvkHO0qzgjpDny8OF0Xo0ULzmfQdO2NVa4xRcPeBjiqZOGlm6lyVcashguYrfNJtmhFVjdT8sGp1Q8x9aKnfGJttig%2BAgjA%2BfbgPXhi13CcVUPWlMK9oqmbcknFvg5dV%2Fwtf6xpwst9awiYY7Jm6pi7lwrrymHAnG7GVC6lB5pHOlsTVyvdx8xqno%2FXVFUEdYtxb5k4b5GGfB7JJfPj%2FL5zizgZ6KAjgDv1t%2FsWOeQ%2Fc2DNCwhdYbe%2FckRGp5Vnk0Bz20UUSuX6ABf9Kq5Vom9kPNssLVg1%2F5%2FQAm5FoFFP8HkdTWxKBSbYK8RELKUrz%2BMxh3R8dTOXVtokQViG9%2BDO8adGYUwfu7G%2BBUKQvm39VBKCOyAbX0k%2B4%2FHJutXlah%2FWT98nTzHmUXY4rpivWBNw%2BN9cvALY2Z%2FZfWqvlEyXIoQTLBdQPQEyFN6rclZv62S8KDhGIGRKdR700tEUKGvFsv7aArT%2F8RQWGr9ftLKVuMqfUwbX63pWrCLO11VBcPfpyXjpHt5Ix%2FoIvmi7W5dVuozcEctKyEq028tGAWVn4Wo9SEI%2FMkswQVjcxc5sG4b2THfRsxKadE6%2FbkSbSKYZOz7c8Eww7sxwxvNBmdA%2BvfrfG%2FqP14ztemQ4mAOBrrn%2FaHbqt1TpOJ2lVqfFQeMuWF9FM51PS8Iz2wjsaEA%2BoOxnmJeAVo9DRj9LPaRxhJts4Jqn7cfT5H1caVjcIl12iv9YaXCh75S4PS5QeUXrN8XtmvuciJTMKnOlDSGfsWWoNuo6L9V68PSZW4B414oFx7P9TEaXf5S1%2FIJYRCjsMqI3YXcfGOD7ozZU7T4V8tmYEIaV2vrzGtrVF9wRz1oCZ6LcC%2F5nePxc6h7Oz6Ef9XyHnff2wJqE4XnOIpaiFBPe6lDPaiZKcF91VTpwBPY8z%2FAoZEZGNstWZuxDOyIX5VJX5L9rElrywUY%2B8S6sSDaKKJRtGPl83g%2FcLhEe7du8ZeF2Vxt1%2Bv2ygrU0v3Xb6Ci8fck9Z7zRHCrbCCbYCjxen2O1e064ALPk4I6Dx5FAblUuZG0WEzSKcqdXgcp%2FAjtiRVzCBLaQOvPuwbIQMA%2FwvjQMoClaiZj0jj855UieqUoi6ioGQObGFcVqOVyFkaEpc8fs1Okw%2B0EDpuZvJ1wkKDruB%2FYjgGH8%2BQbI4uzpgTks01kwr6nkwc8niqSj36xy68N5c2aCc0QgeCmJczmn8LmWj70hoWvkWo%2BwB8n7Y2%2F6MJwFh8vY9rKvGjkd5VGhuK4CH%2FbiMMuSIxPMmL4O%2FpZwBPRV1RyH%2BVjce6sRElImoVds%2F3X7KG00yDg3ucCWSrNpzGjvthllhaJjLNdXI47j1KGIfxLApUlQ2uRQSgZAWIFz%2Fa8jWpdVsyeglqfz9yIyuCTC2JZRikIJ%2BrPaiEZeVw2ONg2Z39qEfN1lq9E%2BqfBYvhP0l1Fdaht%2FQ%2BXJw5b8rbGA6Ejw0V4EVUEaJRt7U0ImM2vMxb7CTpCEa45J9DaQE0pQ9fyNwPFucS159KoD3RRbXsJxK4B3YO%2B4vg5lS7GKS1Pzct6YyJsAP6Xhe3oYMHKZfTB1njmdnimWJ4lqVD12XfffMKs%2BXUT532Gbaz%2FC4jSjhlHZwu%2B0hiKeXQbTUGT%2FYDnuCMMexcmmGB8UizORWtqQ5XBXco%2FMdIZOHAW35oSBD2ZfQZPPyolP5cTvZ2%2FVD%2FbroqklmW2%2BKtJXvDxo3ciZTPmL2YdTaQRXwpnNqDzfm6Obc6N3zClsTBkf5wEC9koQWqqNQXW2Pa5Iers9Qdt0mwfydjMQjPfpyqZoHr%2BF0ntgiW8YHYrCvKb%2B8lwAVCJhBOnv5iwjAzUTHTf0OrBMlBojI3utyGffKg3RGEgxbL3psLMEsNgUTvUwvXB9I666gc%2BmigwoK2jt3kAVOi%2BIdvyggm22S1dnRV3mQtwjZvXB83NzIve71eZ4NEbCG6MAdyDH4%2FXaj9faTIcQ2xKtIIxPunv46VCSsj5%2B7Gp4UUFKJuXQ6v6l%2FE5KjsGSSy5B1dwhhUzF6dt3ogkJ3QBO4EHs88Io1AsvTbQypjz0qkGf9yOE%2FL1Vf0BpJmknW7bPFFQqKr%2FWBKI5v8iIX7O8MWotJZ%2Fo9IkAYmMlUBEShGMnACNgl%2BWRBbClrACqIoYj4jkAsazxN%2F%2Bs%2FMhmzd%2B%2FeQFTaZ3nq3aOj%2FIzI%2BE%2FUlrcf%2FkEHtkpB7f3PzUNUQ%3D%3D'
+
+
+返回：
+wCMP%2F3uGe3Wxmrxn%2F9nlfL4xVhQ5bxc1et390bJWSnEvHlYa74TM5BAdw%2Bt5qOyL0f8gEaC943pkceRpHy4Y9xLa7aUnx4qMnRpyuPXVylgBE%2BKNdYTvEmOxbtzfTbHUYGCoR44c8n96YgDkY%2FULriEMTgcPtpIVlFIXjq7bRgVt6FDsmuoLWiVZCk%2FBwo25sLLpDj3jEVHIQchpxTOKNEt22nynHq3XFhnllJXcQCEjham2CP9l7FQFDzj6vtL9W4jB9dsAGqko5Sf%2BdoJXlue0yERkVzyVEoFXbuRAcIy8wp0DJnAULmVDGXXE8dlCGfR72FeLSHNkJwn09kyx6t0hR0ymcHyEpfNHGlj9JxGbvTGqCE6c74rVAPvSqwwdwJd35fSpfDn6m3W0pfOD05M3aokxMPz%2F3sded5ZzDdH1cqTJO2qC%2F2pMmpfLDljNXNq27inTjL9eawJ6Y3jr0Rpb1znUGu8kqsb63zkxGrjTg5VcSlZ8CWOE40e6Lvu5p3i587%2BDQf2y5VSg%2FdVTF%2B243MTEy2wfmQlM0RapNBT1LFzL5q13T%2BkDpGD5nFgms%2B340S3Qvl6oecGR1v%2FqnjtiNmxBRZZb2Tmg3RbNmd%2F8BSpvMH1z92vbZQ2qTN6VIR6U2fZf%2FcbYWXNTyTknCg8y1IhF5POyGvtYC%2F8U0tlJpSVC8jK%2BBNDKECp3w3umOiuoKuHA8rP5N31x3mgkXDRGvisdCtYQ45oKkqqT53O610Rkh4Y1vsMwdTbZdFiANXFKMREanXmrQdu%2B9FVPaXrmxDFlw40du%2BN9Vug0gOvbRLR0PikHdKHus2Crm8PNcyPBkUG6PN67M8UHobUfuo6bjcykixV%2F%2FSi6I%2B9Mnb0IRYUahIrHFJDvIsTzsH1PlBQ6PQpYXGXoZTsmIR9m2VxbvSibZiZROwtbddicKqyAVGfEvY%2BBdSVC5M1l1eChZwIWmuhTUKwSg4l4XPSRAQNIBmAjdmb943CLd21kY%2BlVpZGk5dpmoYcJa9XDpZw2eg7gZS7EJoZBgi5uZaeyal0cHEL2Bal9gCXDzt6TZCwUg02i8R6sqgIf1yfsibddBME7SL7JzecQJ0UHf%2BcR79AiIMDFXT8NcysYGkyoeee3OKAndbUiVdoKFd8gEU%2BPGRwRB0LWDCRqlr8A0ytMOT6C648VqEa%2BW77rYPiN4fkN9B2Z7E%2FcB1U93I9w37V1J3OHXKaOWwisqIefmGmzT7qucm96tljb6w8Of016vrUYCEMOO1G6GYsi%2FdkS4OExDuGt%2B9Ymnzfl7LmpgM91o4c7HjH5wDAEgBXLMizx9%2B1jrfO%2Fdurh9q3klmREf7iY0tdIJFl%2BXJwZ1Hn8ehH73kZv5CEBhQguYh22ZdD2bntKWqNdhH4X0pl8d7WLaYfunIeyX19VD7X9k4qfoJnujs4GXzRX3ygwEOaZl0myYVcgLgspOJ83OPk5hJjZtVK7Emm5fxKrjyCAqsYIklHsDSo4K5vimyfu5e1Etz03btPwm5Nb77lloyXZFmcEb5pB0B50fDUn6HyDEQ4vxmikz2AIW5HvV7CfMjXWnLWVVsHbY2g1HFwM%2F2oHER%2BX40TedQZC8xTAD64%2B73TCWq1UK%2FHtFsmZPvqLIH%2FfOj4xFnCjThcriVsHyFmvzFgPa2m%2BzA0DujWyMG1RbOMRIEHhubI7WMgyZrV8T3xqXU%2FgbdxpdFbUs7Sbk47o9octj46A3%2FuXUcwJNQQqzsfA3GK1MmXbUslOfaNFp5EI%2BSCTJnrGiptpdeUS0K3KFxtLQWHptOj8EzPX%2BM672E0YvLaGmE1BP5eu0X9RdA8tIGWw%2BVpH60%2FNcfg2C14uoqKUcGrqaBsZUuuEa6LVL1J9mQ%2BoQfVCmcyhWCMnDaTKLcC8gx1kwoD14pInPLkYFkUmwQy8kLFD5Kulm8wVMbCguZdlL0B05hIo5uhTcqD%2BygJPV3c5otwvDQa%2BSmbcn%2FRnVkkTIfoVKYNIy1hJYhltNA7aqxS%2FF0eAhOsAwYkhBH1d5jZInyS2Sxfcb3ek7GdYKqs0GsAEvS63F2szEYsXdKwHNHjlOnxK5fsFqIoJ1XJyltEv0fQwyHx1rHlWSMaZWjsnqcNai%2FiKeu0cVB7V8ZVgHuw5lbqaTA9fSmUn5CNFZwYcP0YPjZ05G84TgdqVCH8jTacn5MdRSzIby9xOdV1pjJLAU%2BnOu3F7yIDiuWDo5w1NuUuXH8sxEdqd%2BNz3FlheDEeja5W2EkksF7yPViza6f%2BLxWRHnnCl9N21POrQ1quixlpy3RCYIInv2mv8oqW91XFStWjOLMhrxOizP7fDZbgExH0O16qLlKE%2F%2Ft00E%2FsDuJzqiHBuEvLqrVFzPp4SwGQdeLaTwZoe5yLphh0xiQFBUQWIxn%2FaahmCArBP3PaxaPTR77E8OAYwBHA28lSDZCiKeEvFWWSFx%2BWCa7XTQMdBK3l4I8EDCiB1aVQy769fTNQe29ZTww2tseZjiyrU2e%2BgTOmVJOmQNf7hxAela%2Bj%2Fb6Q0IX2%2F7W%2BFjBZ3Nj0%2Fzm3xdR3%2BHmNZkHGESArAV7ss1hsiLMNBH1wvgAuZBD9Bbs8umxwY9Lg9ozbBRbkNCAu%2FQKxqSKiz%2B%2FRSGT62nfknb6IOftoWX9mHb1eZ9AJZyypLrrcksBdc6rsG%2BhROmoOZJxZqoWa6yo4NHtQXpXnuK0ErdbTtjq1Baxs%2F2s3RAGS4sTOp5IuKJE9PrvCU2aLT%2Fpl5GDTlsRm2zAtfLBbfob%2FhInUR3g7AoX4EX0hMLlHfLpM7LC%2Blsq2evhfT8x6un%2BPpdrnEEhkkKn7MhQXQf4V%2BQnFnbisf4nc4d7cosjV9tYwtyVP9XCA74%2F6pNqrc%2FnR8pHIFFU7uyXr5ZHMyJwt%2ByJLeeJyHAP8gJDp0Ig3yagKZjIq8QIY%2FmAoNv6R9vrVfBjNOFxeQlPZV0iajunfjqz4OnSXyeVpaYYXqx8qxHLaTqifIWE%2B1a%2FHi1Y%2BNVz3TV%2FULg3jOEcJMcwmKnI3sNX30fwbfebe6iy5d1Oap1Qwrqbw%2BvdBd0VGoQM4g4DGEWE2pwbilRGoeZ37w%2FhoZ25R5F02X2ycU%2BKZi4jmQhoxnX8pFCc76TIE%2BiiBpAMLBeYoLOA%2FlA%2F0TTDYhFGLmMfxtXwExDJRrTxIbXLmFDQJ185Nz2oDe8E4EGjcWnHJ%2FUDn9sEs%2F2uMocdxBTD7sQziHurln17l1DaAcVx1ZO0f3thkR8JFJkfGnEy5CUKw7yib19sNqnC3rAyPiij0UjrULUuzBHOiqSAuA%2Bc%2BeHV8tRGWz1t2gb0pDUa1H%2FN%2FeU0949ko%2FTpM0APN1sz7dIfillWQC6ED8uXwh37%2BfBOKeh3%2BhpeBbRQApkdyjLbqU98q2pLuJb0LwKzIb9JHKnFPyyIff3bLYRlFIj6ltClRhCQz6Gw6Xn63ELzrRFbMFy8nSvmgBPO%2FXpikWMLl6xy7eVCRlBIrgTmhiEJg2hYl4BmTb7mFR%2BmixJHPn0OhLEhAMXxx2rQzYSzRmEdj166HEAAJnSFa3146JesAt5AFkubKClZf60NAMehRQV1xfksJJY1gooiFAG20i0MLmLyuaycn0T5%2FHhDfOyLyHzvYwC8P0HYBejsrSW2CGQfOZImgNb8sT6iQjR1%2BY4uRGr7LmrzlL1EdJqY%2BMQ5RSQnAiasr8SdfiLfY96iXUijQ5rmM%2BwDB7B0ZGCilFsTpxt7SneuRnX5SZMCwY1UbqfM3Rj2kAxTqS3yPnVwKO1S3AsRS0G0bxoNW1hrc%2Bz9M4esk2vmKxCXY9JuTct5zqpvS%2F%2BdYZxiutUxnBCQEzZyIeKjiGhODFVEhDT6leBZLkdPnWhhW%2Berr8FOA%2B3MZMZcNQGuhoR6ZOdaHCu9pD3KVFOP4FfLQNJs0sqbtez4G9yNxorNHqnGqNIOt%2BDGQPhh39ZmdXvfW3QC2V4Fc3b29hlV8nxjxvCxhLqvu5MOounCfJzRO7AGhpr9xPhO3U79lX8%2Bfcr2mMu9UJLJqnc64jkilSnTAlqCAqxzcwM%2Fe19VizanPcwxi2kG0adEs99WX2bGwl0GmZN1PSiOucMYaXCK25aATmrdT0%2FkzVR%2F1%2BF0kdoU58l3AhaWbsYJdgVyOfwuc0zyKAFIp52YNqgtpQl9Ljb0OhjM9G0ym9kv6KKKcvgMDUS4bLyqFks55owNxz2RcuajUTqgPC3z3J07%2FiJ7LAcnHTS6kit65zyS3AlnuBpgaNrY5vv%2FNr8fprgBQBoYg3NqV6pDoVTWNVFTSe%2B4qdwRD0F5AzXGZc8mjxJSBVwipR6L3sV5%2BR0Vk51UVBcqVv2ygGrST4RCDvXkTqAELkyI1RvtADFcBUO5ODf7TBMCXWk2%2BCdJQNkRJNM%2Fcik1I57F87VXm6QHxgQrjUxj4rNNBMDNOwrNEP3Fy2IGnQ56DHbRPzroARxhTKJsrFvs7zwg8P1tt9BzrniRe9wL82zB0%2B8tUWCAD0LDeGejzXAHxk6EJx998tpM3Q4YsK0klrPBnPSOOSPGCCC1cHx6mYeXzfjxhR
+
+
+解密：
+
+go run main.go wCMP%2F3uGe3Wxmrxn%2F9nlfL4xVhQ5bxc1et390bJWSnEvHlYa74TM5BAdw%2Bt5qOyL0f8gEaC943pkceRpHy4Y9xLa7aUnx4qMnRpyuPXVylgBE%2BKNdYTvEmOxbtzfTbHUYGCoR44c8n96YgDkY%2FULriEMTgcPtpIVlFIXjq7bRgVt6FDsmuoLWiVZCk%2FBwo25sLLpDj3jEVHIQchpxTOKNEt22nynHq3XFhnllJXcQCEjham2CP9l7FQFDzj6vtL9W4jB9dsAGqko5Sf%2BdoJXlue0yERkVzyVEoFXbuRAcIy8wp0DJnAULmVDGXXE8dlCGfR72FeLSHNkJwn09kyx6t0hR0ymcHyEpfNHGlj9JxGbvTGqCE6c74rVAPvSqwwdwJd35fSpfDn6m3W0pfOD05M3aokxMPz%2F3sded5ZzDdH1cqTJO2qC%2F2pMmpfLDljNXNq27inTjL9eawJ6Y3jr0Rpb1znUGu8kqsb63zkxGrjTg5VcSlZ8CWOE40e6Lvu5p3i587%2BDQf2y5VSg%2FdVTF%2B243MTEy2wfmQlM0RapNBT1LFzL5q13T%2BkDpGD5nFgms%2B340S3Qvl6oecGR1v%2FqnjtiNmxBRZZb2Tmg3RbNmd%2F8BSpvMH1z92vbZQ2qTN6VIR6U2fZf%2FcbYWXNTyTknCg8y1IhF5POyGvtYC%2F8U0tlJpSVC8jK%2BBNDKECp3w3umOiuoKuHA8rP5N31x3mgkXDRGvisdCtYQ45oKkqqT53O610Rkh4Y1vsMwdTbZdFiANXFKMREanXmrQdu%2B9FVPaXrmxDFlw40du%2BN9Vug0gOvbRLR0PikHdKHus2Crm8PNcyPBkUG6PN67M8UHobUfuo6bjcykixV%2F%2FSi6I%2B9Mnb0IRYUahIrHFJDvIsTzsH1PlBQ6PQpYXGXoZTsmIR9m2VxbvSibZiZROwtbddicKqyAVGfEvY%2BBdSVC5M1l1eChZwIWmuhTUKwSg4l4XPSRAQNIBmAjdmb943CLd21kY%2BlVpZGk5dpmoYcJa9XDpZw2eg7gZS7EJoZBgi5uZaeyal0cHEL2Bal9gCXDzt6TZCwUg02i8R6sqgIf1yfsibddBME7SL7JzecQJ0UHf%2BcR79AiIMDFXT8NcysYGkyoeee3OKAndbUiVdoKFd8gEU%2BPGRwRB0LWDCRqlr8A0ytMOT6C648VqEa%2BW77rYPiN4fkN9B2Z7E%2FcB1U93I9w37V1J3OHXKaOWwisqIefmGmzT7qucm96tljb6w8Of016vrUYCEMOO1G6GYsi%2FdkS4OExDuGt%2B9Ymnzfl7LmpgM91o4c7HjH5wDAEgBXLMizx9%2B1jrfO%2Fdurh9q3klmREf7iY0tdIJFl%2BXJwZ1Hn8ehH73kZv5CEBhQguYh22ZdD2bntKWqNdhH4X0pl8d7WLaYfunIeyX19VD7X9k4qfoJnujs4GXzRX3ygwEOaZl0myYVcgLgspOJ83OPk5hJjZtVK7Emm5fxKrjyCAqsYIklHsDSo4K5vimyfu5e1Etz03btPwm5Nb77lloyXZFmcEb5pB0B50fDUn6HyDEQ4vxmikz2AIW5HvV7CfMjXWnLWVVsHbY2g1HFwM%2F2oHER%2BX40TedQZC8xTAD64%2B73TCWq1UK%2FHtFsmZPvqLIH%2FfOj4xFnCjThcriVsHyFmvzFgPa2m%2BzA0DujWyMG1RbOMRIEHhubI7WMgyZrV8T3xqXU%2FgbdxpdFbUs7Sbk47o9octj46A3%2FuXUcwJNQQqzsfA3GK1MmXbUslOfaNFp5EI%2BSCTJnrGiptpdeUS0K3KFxtLQWHptOj8EzPX%2BM672E0YvLaGmE1BP5eu0X9RdA8tIGWw%2BVpH60%2FNcfg2C14uoqKUcGrqaBsZUuuEa6LVL1J9mQ%2BoQfVCmcyhWCMnDaTKLcC8gx1kwoD14pInPLkYFkUmwQy8kLFD5Kulm8wVMbCguZdlL0B05hIo5uhTcqD%2BygJPV3c5otwvDQa%2BSmbcn%2FRnVkkTIfoVKYNIy1hJYhltNA7aqxS%2FF0eAhOsAwYkhBH1d5jZInyS2Sxfcb3ek7GdYKqs0GsAEvS63F2szEYsXdKwHNHjlOnxK5fsFqIoJ1XJyltEv0fQwyHx1rHlWSMaZWjsnqcNai%2FiKeu0cVB7V8ZVgHuw5lbqaTA9fSmUn5CNFZwYcP0YPjZ05G84TgdqVCH8jTacn5MdRSzIby9xOdV1pjJLAU%2BnOu3F7yIDiuWDo5w1NuUuXH8sxEdqd%2BNz3FlheDEeja5W2EkksF7yPViza6f%2BLxWRHnnCl9N21POrQ1quixlpy3RCYIInv2mv8oqW91XFStWjOLMhrxOizP7fDZbgExH0O16qLlKE%2F%2Ft00E%2FsDuJzqiHBuEvLqrVFzPp4SwGQdeLaTwZoe5yLphh0xiQFBUQWIxn%2FaahmCArBP3PaxaPTR77E8OAYwBHA28lSDZCiKeEvFWWSFx%2BWCa7XTQMdBK3l4I8EDCiB1aVQy769fTNQe29ZTww2tseZjiyrU2e%2BgTOmVJOmQNf7hxAela%2Bj%2Fb6Q0IX2%2F7W%2BFjBZ3Nj0%2Fzm3xdR3%2BHmNZkHGESArAV7ss1hsiLMNBH1wvgAuZBD9Bbs8umxwY9Lg9ozbBRbkNCAu%2FQKxqSKiz%2B%2FRSGT62nfknb6IOftoWX9mHb1eZ9AJZyypLrrcksBdc6rsG%2BhROmoOZJxZqoWa6yo4NHtQXpXnuK0ErdbTtjq1Baxs%2F2s3RAGS4sTOp5IuKJE9PrvCU2aLT%2Fpl5GDTlsRm2zAtfLBbfob%2FhInUR3g7AoX4EX0hMLlHfLpM7LC%2Blsq2evhfT8x6un%2BPpdrnEEhkkKn7MhQXQf4V%2BQnFnbisf4nc4d7cosjV9tYwtyVP9XCA74%2F6pNqrc%2FnR8pHIFFU7uyXr5ZHMyJwt%2ByJLeeJyHAP8gJDp0Ig3yagKZjIq8QIY%2FmAoNv6R9vrVfBjNOFxeQlPZV0iajunfjqz4OnSXyeVpaYYXqx8qxHLaTqifIWE%2B1a%2FHi1Y%2BNVz3TV%2FULg3jOEcJMcwmKnI3sNX30fwbfebe6iy5d1Oap1Qwrqbw%2BvdBd0VGoQM4g4DGEWE2pwbilRGoeZ37w%2FhoZ25R5F02X2ycU%2BKZi4jmQhoxnX8pFCc76TIE%2BiiBpAMLBeYoLOA%2FlA%2F0TTDYhFGLmMfxtXwExDJRrTxIbXLmFDQJ185Nz2oDe8E4EGjcWnHJ%2FUDn9sEs%2F2uMocdxBTD7sQziHurln17l1DaAcVx1ZO0f3thkR8JFJkfGnEy5CUKw7yib19sNqnC3rAyPiij0UjrULUuzBHOiqSAuA%2Bc%2BeHV8tRGWz1t2gb0pDUa1H%2FN%2FeU0949ko%2FTpM0APN1sz7dIfillWQC6ED8uXwh37%2BfBOKeh3%2BhpeBbRQApkdyjLbqU98q2pLuJb0LwKzIb9JHKnFPyyIff3bLYRlFIj6ltClRhCQz6Gw6Xn63ELzrRFbMFy8nSvmgBPO%2FXpikWMLl6xy7eVCRlBIrgTmhiEJg2hYl4BmTb7mFR%2BmixJHPn0OhLEhAMXxx2rQzYSzRmEdj166HEAAJnSFa3146JesAt5AFkubKClZf60NAMehRQV1xfksJJY1gooiFAG20i0MLmLyuaycn0T5%2FHhDfOyLyHzvYwC8P0HYBejsrSW2CGQfOZImgNb8sT6iQjR1%2BY4uRGr7LmrzlL1EdJqY%2BMQ5RSQnAiasr8SdfiLfY96iXUijQ5rmM%2BwDB7B0ZGCilFsTpxt7SneuRnX5SZMCwY1UbqfM3Rj2kAxTqS3yPnVwKO1S3AsRS0G0bxoNW1hrc%2Bz9M4esk2vmKxCXY9JuTct5zqpvS%2F%2BdYZxiutUxnBCQEzZyIeKjiGhODFVEhDT6leBZLkdPnWhhW%2Berr8FOA%2B3MZMZcNQGuhoR6ZOdaHCu9pD3KVFOP4FfLQNJs0sqbtez4G9yNxorNHqnGqNIOt%2BDGQPhh39ZmdXvfW3QC2V4Fc3b29hlV8nxjxvCxhLqvu5MOounCfJzRO7AGhpr9xPhO3U79lX8%2Bfcr2mMu9UJLJqnc64jkilSnTAlqCAqxzcwM%2Fe19VizanPcwxi2kG0adEs99WX2bGwl0GmZN1PSiOucMYaXCK25aATmrdT0%2FkzVR%2F1%2BF0kdoU58l3AhaWbsYJdgVyOfwuc0zyKAFIp52YNqgtpQl9Ljb0OhjM9G0ym9kv6KKKcvgMDUS4bLyqFks55owNxz2RcuajUTqgPC3z3J07%2FiJ7LAcnHTS6kit65zyS3AlnuBpgaNrY5vv%2FNr8fprgBQBoYg3NqV6pDoVTWNVFTSe%2B4qdwRD0F5AzXGZc8mjxJSBVwipR6L3sV5%2BR0Vk51UVBcqVv2ygGrST4RCDvXkTqAELkyI1RvtADFcBUO5ODf7TBMCXWk2%2BCdJQNkRJNM%2Fcik1I57F87VXm6QHxgQrjUxj4rNNBMDNOwrNEP3Fy2IGnQ56DHbRPzroARxhTKJsrFvs7zwg8P1tt9BzrniRe9wL82zB0%2B8tUWCAD0LDeGejzXAHxk6EJx998tpM3Q4YsK0klrPBnPSOOSPGCCC1cHx6mYeXzfjxhR de63cbfa1ec7b1db 2c3528325d999e18 decrypt
+
+解密结果：
+
+{"ads":[{"adspace_id":"6603768","creative":[{"adSpaceType":2,"price":10,"banner_id":"1153065378095333376","open_type":2,"interaction_type":"2","interaction_object":{"url":"https://amcn.bytedance.com/ug/armor/623040fd8df75a02420060e1?show_loading=1\u0026pull_down_close=0\u0026enter_from=UG_CF_CSJ_2022\u0026ug_feed_type=1\u0026ug_app=0\u0026plan_id=7106425777876369677\u0026page_id=F618\u0026up_trans_status_bar=1\u0026ecom_pid=dy_107062945313497465096_13838_18045618"},"adm_type":"3","native":{"buttonTxt":"","desc":"","img":{"height":1280,"md5":"3bd30296acba6924faf9540dd91b3e7b","url":"http://d.hy-new.360os.com/huayi-new/emtfZGV4LjE2NzM1MDU2NjQuemtfZGV4LjE2NjgxNTQwNjQuMi5qcGc=","width":720,"type":1},"imgList":[{"height":1280,"md5":"3bd30296acba6924faf9540dd91b3e7b","url":"http://d.hy-new.360os.com/huayi-new/emtfZGV4LjE2NzM1MDU2NjQuemtfZGV4LjE2NjgxNTQwNjQuMi5qcGc=","width":720,"type":1}],"title":{"text":"抖音商城（new）"}},"event_track":[{"event_type":"1","notify_url":"hhyt.comp.360os.com/api/report.do?adId=1153065378095333376\u0026adSpaceId=6603768\u0026adSpaceType=2\u0026adSrc=1\u0026aid=\u0026api=20231022\u0026app=com.ceshi.cn\u0026appId=1282\u0026bid=B78B361A142CDC079414DAC07509AE5F\u0026brand=samsung\u0026ch=\u0026channelId=\u0026co=\u0026deviceChannel=\u0026deviceModel=SM-S9180\u0026dspAppId=\u0026dspSpaceId=\u0026etype=1\u0026gtm=1714445047543\u0026idFromAdSrc=1153065378095333376\u0026imei=\u0026ip=117.34.231.173\u0026m2=d41d8cd98f00b204e9800998ecf8427e\u0026mac=\u0026network=0\u0026nodeId=1\u0026oaid=85d1d060be96f0743f44ce3e6d5d861f0e3405d242c33d116825ea09f15051f4\u0026op=\u0026operators=\u0026os=android\u0026osv=34\u0026ov=14\u0026packageName=com.ceshi.cn\u0026prov=1.1\u0026realCarrierId=\u0026resultCode=__RESULTCODE__\u0026rt=0\u0026sdkType=reaper_out\u0026sdkVersionCode=\u0026sdk_type=reaper_out\u0026sign=1bb4343bf9f2dae4847c808920f6a35c8f7f8aa16b7a0f3ed49b522142111ca0\u0026sip=117.34.231.173\u0026sn=\u0026sr=2420280\u0026uid=85d1d060be96f0743f44ce3e6d5d861f0e3405d242c33d116825ea09f15051f4\u0026version=\u0026wrapData=f77LlI7qBAx05PuoGwpuClXCEuAgn%2FMHS5vF","plat":"DUOYING"},{"event_type":"2","notify_url":"http://hyt.comp.360os.com/api/report.do?adId=1153065378095333376\u0026adSpaceId=6603768\u0026adSpaceType=2\u0026adSrc=1\u0026aid=\u0026api=20231022\u0026app=com.ceshi.cn\u0026appId=1282\u0026bid=B78B361A142CDC079414DAC07509AE5F\u0026brand=samsung\u0026ch=\u0026channelId=\u0026co=\u0026deviceChannel=\u0026deviceModel=SM-S9180\u0026dspAppId=\u0026dspSpaceId=\u0026etype=2\u0026gtm=1714445047543\u0026idFromAdSrc=1153065378095333376\u0026imei=\u0026ip=117.34.231.173\u0026m2=d41d8cd98f00b204e9800998ecf8427e\u0026mac=\u0026network=0\u0026nodeId=1\u0026oaid=85d1d060be96f0743f44ce3e6d5d861f0e3405d242c33d116825ea09f15051f4\u0026op=\u0026operators=\u0026os=android\u0026osv=34\u0026ov=14\u0026packageName=com.ceshi.cn\u0026prov=1.1\u0026realCarrierId=\u0026resultCode=__RESULTCODE__\u0026rt=0\u0026sdkType=reaper_out\u0026sdkVersionCode=\u0026sdk_type=reaper_out\u0026sign=65ff2eae0c9daacdbf740da176328105e7c45f17ddf968bfe384ce0b32569a3b\u0026sip=117.34.231.173\u0026sn=\u0026sr=2420280\u0026uid=85d1d060be96f0743f44ce3e6d5d861f0e3405d242c33d116825ea09f15051f4\u0026version=\u0026wrapData=f77LlI7qBAx05PuoGwpuClXCEuAgn%2FMHS5vF","plat":"DUOYING"}],"mp_id":"","mp_path":""}]}],"bid":"B78B361A142CDC079414DAC07509AE5F","error_code":0,"error_msg":""}
